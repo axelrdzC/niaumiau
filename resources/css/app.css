@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@700&family=Kosugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.deshabilitada {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.eliminar-prenda {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2em;
+  padding: 0 0.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.eliminar-prenda {
+  /*display: none; /* Ocultar el botón por defecto */
+}
