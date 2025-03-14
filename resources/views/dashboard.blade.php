@@ -17,7 +17,7 @@
         </div>
         <div class="max-w-8xl mx-auto sm:px-6 lg:px-8 flex gap-2">
             <!-- recomendaciones -->
-            <div class="w-full flex bg-[#9471B7] dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="w-full flex bg-[#9471B7] overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-xl text-gray-100">
                     <div class="">
                         No sabes que ponerte hoy?
@@ -26,8 +26,8 @@
                 </div>
             </div>
             <!-- clima -->
-            <div class="w-full flex font-michroma bg-gradient-to-l from-[#e2f1f1] to-[#afc9e3] dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 me-4 text-white dark:text-gray-100">
+            <div class="w-full flex font-michroma bg-gradient-to-l from-[#e2f1f1] to-[#afc9e3] overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 me-4 text-white">
                     <div> Ciudad Victoria, Tamaulipas </div>
                     <div class=" text-6xl"> 27° </div>
                     <div class="pt-2"> Despejado </div>

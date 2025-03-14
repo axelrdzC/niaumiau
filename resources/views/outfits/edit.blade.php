@@ -37,7 +37,7 @@
               </x-action-button>
           </div>
           <!-- selector -->
-          <div class="mt-8 p-4 w-1/3 bg-white h-[80vh] dark:bg-gray-700 overflow-hidden sm:rounded-lg">        
+          <div class="mt-8 p-4 w-1/3 bg-white h-[80vh] overflow-hidden sm:rounded-lg">        
               <!-- buscador -->
               <input type="text" class="w-full rounded-md border mb-4 border-gray-300" placeholder="Buscar...">
               <!-- preview de las prendas -->

@@ -5,8 +5,8 @@
       <div class="max-w-8xl mx-auto sm:px-6 lg:px-8 flex gap-6">
           <!-- un preview -->
             <!-- clima -->
-            <div class="w-full flex font-michroma bg-gradient-to-l from-[#e2f1f1] to-[#afc9e3] dark:bg-gray-800 overflow-hidden shadow-md sm:rounded-lg">
-                <div class="p-6 me-4 text-white dark:text-gray-100">
+            <div class="w-full flex font-michroma bg-gradient-to-l from-[#e2f1f1] to-[#afc9e3] overflow-hidden shadow-md sm:rounded-lg">
+                <div class="p-6 me-4 text-white">
                     <div> Ciudad Victoria, Tamaulipas </div>
                     <div class=" text-6xl"> 27° </div>
                     <div class="pt-2"> Despejado </div>
@@ -25,7 +25,7 @@
                 </div>
             </div>
           <!-- buttons -->
-          <div class="w-full flex flex-col gap-2 dark:bg-gray-800 shadow-sm sm:rounded-lg">
+          <div class="w-full flex flex-col gap-2 shadow-sm sm:rounded-lg">
             <x-action-button class="flex-1 !text-xl" onclick="window.location.href='{{ route('outfits.create') }}'">Crear un outfit nuevo</x-action-button>
             <x-action-button class="flex-1 !text-xl">Mis favoritos</x-action-button>
             <x-action-button class="flex-1 !text-xl">Mas utilizados</x-action-button>
