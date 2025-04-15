@@ -27,7 +27,7 @@
         <!-- Categoria -->
         <div class="flex flex-col item-center">
             <x-input-label for="categoria_id" class="text-lg" :value="__('Categoria')" />
-            <select name="categoria_id" class="border-gray-300 py-1 focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm">
+            <select name="categoria_id" class="categoria_id border-gray-300 py-1 focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm">
                 <option value="">Cargando...</option>
             </select>   
         </div>
@@ -35,7 +35,7 @@
         <!-- Marca -->
         <div class="flex flex-col item-center">
             <x-input-label for="marca_id" class="text-lg" :value="__('Marca')" />
-            <select name="marca_id" class="border-gray-300 py-1 focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm">
+            <select name="marca_id" class="marca_id border-gray-300 py-1 focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm">
                 <option value="">Cargando...</option>
             </select>   
         </div>
@@ -43,7 +43,7 @@
         <!-- Talla -->
         <div class="flex flex-col item-center">
             <x-input-label for="talla_id" class="text-lg" :value="__('Talla')" />
-            <select name="talla_id" class="border-gray-300 py-1 focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm">
+            <select name="talla_id" class="talla_id border-gray-300 py-1 focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm">
                 <option value="">Cargando...</option>
             </select>   
         </div>
@@ -51,7 +51,7 @@
         <!-- Color -->
         <div class="flex flex-col item-center">
             <x-input-label for="color_id" class="text-lg" :value="__('Color')" />
-            <select name="color_id" class="border-gray-300 py-1 focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm">
+            <select name="color_id" class="color_id border-gray-300 py-1 focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm">
                 <option value="">Cargando...</option>
             </select>   
         </div>

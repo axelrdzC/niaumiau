@@ -41,7 +41,7 @@
                 <!-- buscador -->
                 <input type="text" class="w-full rounded-md border mb-4 border-gray-300" placeholder="Buscar...">
                 <!-- preview de las prendas -->
-                <div class="grid grid-cols-2 w-full gap-2">
+                <div class="grid grid-cols-2 w-ful overflow-y-scroll gap-2">
                     @foreach ($prendas as $prenda)
                         <div id="{{ $prenda->id }}" class="prenda-item">
                             <x-item-preview draggable="true" ondragstart="drag(event)">

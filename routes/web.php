@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OutfitsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PrendaController;
@@ -29,9 +30,7 @@ Route::get('/', function () {
 Route::middleware(['auth', 'verified'])->group(function () {
 
     // Página principal del dashboard
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     // Página de outfits
     Route::get('/outfits', function () {
@@ -68,6 +67,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/api/marcas', [MarcaController::class, 'getAllMarcas'])->name('marcas.api');
     Route::get('/api/colores', [ColorController::class, 'getAllColors'])->name('colores.api');
     Route::get('/api/tallas', [TallaController::class, 'getAllTallas'])->name('tallas.api');
+    Route::get('/api/outfits', [OutfitsController::class, 'getAllOutfits'])->name('outfits.api');
     
 });
 

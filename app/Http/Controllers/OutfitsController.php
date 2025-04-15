@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Outfits;
 use App\Models\Prenda;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class OutfitsController extends Controller
@@ -62,7 +63,11 @@ class OutfitsController extends Controller
 
     public function index()
     {
-        $outfits = Outfits::with('prendas')->get();
+        $userId = Auth::id(); // Obtiene el ID del usuario autenticado
+        $outfits = Outfits::with('prendas')
+                ->where('user_id', $userId)
+                ->get();
+
         return view('outfits.index', compact('outfits'));
     }
 

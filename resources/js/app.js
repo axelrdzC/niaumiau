@@ -7,22 +7,24 @@ window.Alpine = Alpine;
 Alpine.start();
 
 // GENERAL API CALLER DE SELECTS
-function callApi(apiName, selectName, selectedValue = null) {
+function callApi(apiName, selectClass, selectedValue = null) {
     fetch(apiName)
         .then(response => response.json())
         .then(data => {
-            let select = document.querySelector(`[name="${selectName}"]`);
-            select.innerHTML = ''; // Limpia opciones previas
-            data.forEach(categoria => {
-                let option = document.createElement('option');
-                option.value = categoria.id;
-                option.textContent = categoria.nombre;
-                select.appendChild(option);
-            });
+            const selects = document.querySelectorAll(`select.${selectClass}`);
+            selects.forEach(select => {
+                select.innerHTML = ''; // Limpia opciones previas
+                data.forEach(categoria => {
+                    let option = document.createElement('option');
+                    option.value = categoria.id;
+                    option.textContent = categoria.nombre;
+                    select.appendChild(option);
+                });
 
-            if (selectedValue) {
-                select.value = selectedValue;
-            }
+                if (selectedValue) {
+                    select.value = selectedValue;
+                }
+            });
         })
         .catch(error => console.error('Error al hacer la llamada a la API:', error));
 }
